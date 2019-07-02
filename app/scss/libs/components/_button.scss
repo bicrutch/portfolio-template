@@ -18,6 +18,10 @@ button{
 	cursor: pointer;
 	@include ptsans-bold;
 
+		&:focus{
+			box-shadow: 0px 0px 6px 2px $btn-focus;
+		}
+
 		&__pink{
 			@extend .btn;
 			background: $btn-dp-col;
