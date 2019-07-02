@@ -35,7 +35,7 @@ button{
 			background: $btn-trans-col;
 			color: $txt-dg-col;
 				&:focus{
-					border: none;
+					border: 2px solid $btn-trans-col;
 				}
 		}
 }

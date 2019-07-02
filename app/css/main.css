@@ -215,7 +215,7 @@ button {
 }
 
 .btn__light:focus {
-  border: none;
+  border: 2px solid transparent;
 }
 
 .icons {
@@ -341,7 +341,7 @@ button {
 .welcome {
   padding-top: 60px;
   height: 650px;
-  background-image: url("../../images/backgrounds/welcome.jpg");
+  background-image: url("../images/backgrounds/welcome.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
 }
