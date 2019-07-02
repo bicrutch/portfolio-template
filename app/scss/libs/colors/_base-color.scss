@@ -5,37 +5,53 @@ $black: #000000;
 
 // --------------------------------------;
 // - цвета бордюров - borderline color`s
-//---------------------------------------;
-
  // ~ обозначения / description
  // g- gray
  // lg - light-gray
  // dp - dark-pink
-
-
 
 $g-border-col: #b3b9bb;
 $lg-border-col: #dddddd;
 $dp-border-col: #d02184;
 $hover-shadow-col: #f3f4f4;
 
+//---------------------------------------;
+
 
 // --------------------------------------;
 // - цвета кнопок - buttons color
-// --------------------------------------;
+
 $btn-dp-col: #d02184;
 $btn-white-col: #ffffff;
 $btn-trans-col: transparent;
 
 // --------------------------------------;
-// - цвета шрифта - typography color`s
+
+
+
 // --------------------------------------;
+// - цвета шрифта - typography color`s
 
 	// ~ description
 	// def - default
-
 
 $txt-def-col: #404f54;
 $txt-mint-col: #1baba1;
 $txt-white-col: #ffffff;
 $txt-dp-col: #d02184;
+
+// --------------------------------------;
+
+
+// --------------------------------------;
+// - бэкграунд - background color`s
+
+	// ~ description
+	// bc - background-color
+
+$bc-light-mint: #f4fafa;
+$bc-dark-mint: #1baba1;
+$bc-dp: #d02184;
+
+// --------------------------------------;
+
