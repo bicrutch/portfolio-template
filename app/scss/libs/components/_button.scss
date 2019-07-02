@@ -3,24 +3,32 @@
 button{
 	padding: 0;
 	margin: 0;
+	outline: none;
 }
 
 .btn{
-	max-width: 455px;
-			width: 100%;
-			height: 55px;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
 	border: none;
-	padding: 8px 12px;
+	border-radius: 30px;
+	padding: 20px 30px;
 	text-transform: uppercase;
+	cursor: pointer;
 	@include ptsans-bold;
-		&:focus{
-			outline-style: solid;
-			outline-width: 2px;
-			// outline-color: $col-outline;
+
+		&__pink{
+			@extend .btn;
+			background: $btn-dp-col;
+			color: $white;
+		}
+
+		&__light{
+			@extend .btn;
+			border: 2px solid $g-border-col;
+			background: $btn-trans-col;
+			color: $txt-dg-col;
 		}
 }
 
