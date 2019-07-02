@@ -10,6 +10,11 @@
     font-family: 'PT Sans', Arial, sans-serif;
     src: url(../fonts/PT_Sans-Web_regular);
   }
+
+  @font-face{
+    font-family: 'Lora', serif;
+    src: url(../fonts/lora/Lora-Regular);
+  }
 }
 
 @mixin ptsans-regular{
@@ -22,6 +27,20 @@
 @mixin ptsans-bold{
   font:{
     family: 'PT Sans', sans-serif;
+    weight: 700;
+  }
+}
+
+@mixin lora-reglar{
+  font:{
+    family: 'Lora', serif;
+    weight: 400;
+  }
+}
+
+@mixin lora-bold{
+  font:{
+    family: 'Lora', serif;
     weight: 700;
   }
 }

@@ -1,16 +1,5 @@
 @charset "UTF-8";
 /*
- ~ обозначения / description
- g- gray
- lg - light-gray
- dp - dark-pink
-
-*/
-/*
-	~ description
-	def - default
-*/
-/*
   ! - подсказка!
   ~ если хотим чтобы свойство записаное в root,
   наследовалось то добавляем к нужному блоку:
@@ -164,6 +153,11 @@ a {
 @font-face {
   font-family: 'PT Sans', Arial, sans-serif;
   src: url(../fonts/PT_Sans-Web_regular);
+}
+
+@font-face {
+  font-family: 'Lora', serif;
+  src: url(../fonts/lora/Lora-Regular);
 }
 
 html,
