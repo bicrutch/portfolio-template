@@ -1,0 +1,37 @@
+.features{
+	background: $white;
+	padding: 92px 0 92px;
+	
+	&__content{
+		display: flex;
+		width: 100%;
+
+			.content-box{
+				flex-direction: column;
+				justify-content: center;
+
+				.feature-txt{
+					@include ptsans-bold;
+					font-size: 26px;
+					text-align: left;
+				}
+
+				.feature__headline{
+					@include ptsans-bold;
+					font-size: 22px;
+					color: $txt-mint-col;
+				}
+
+				.feature__ceo{
+					margin-top: 22px;
+					font-size: 16px;
+					color: $txt-def-col;
+				}
+			}
+	}
+
+
+
+
+
+}
