@@ -337,3 +337,71 @@ button {
   font-size: 14px;
   text-transform: uppercase;
 }
+
+.welcome {
+  padding-top: 60px;
+  height: 650px;
+  background-image: url("../../images/backgrounds/welcome.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.welcome__content {
+  display: initial;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome__content .headline {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.welcome__content .subline {
+  margin-top: 35px;
+  font-size: 22px;
+}
+
+.welcome__content .searchholder {
+  position: relative;
+  margin-top: 32px;
+}
+
+.welcome__content .searchholder .txt-write {
+  width: 100%;
+  height: 57px;
+  border: none;
+  padding: 5px 8px 5px 55px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  position: relative;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 6px 1px #b9bebf;
+          box-shadow: 0px 4px 6px 1px #b9bebf;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+}
+
+.welcome__content .searchholder .txt-write:focus {
+  outline: none;
+}
+
+.welcome__content .searchholder .txt-write:hover {
+  -webkit-box-shadow: 0px 6px 8px 2px #b9bebf;
+          box-shadow: 0px 6px 8px 2px #b9bebf;
+}
+
+.welcome__content .searchholder .btn__pink {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  height: 49px;
+  padding: 0 45px;
+}

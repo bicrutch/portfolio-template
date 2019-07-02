@@ -1,0 +1,59 @@
+.welcome{
+	padding-top: 60px;
+	height: 650px;
+	background-image: url('../../images/backgrounds/welcome.jpg');
+	background-position: bottom;
+	background-repeat: no-repeat;
+
+	&__content{
+		display: initial;
+		margin: 0 auto;
+		text-align: center;
+
+			.headline{
+				@include lora-bold;
+				font-size: 50px;
+			}
+
+			.subline{
+				margin-top: 35px;
+				font-size: 22px;
+			}
+
+			.searchholder{
+				position: relative;
+				margin-top: 32px;
+
+				.txt-write{
+					width: 100%;
+					height: 57px;
+					border: none;
+					padding: 5px 8px 5px 55px;
+					border-radius: 30px;
+					position: relative;
+					background: $white;
+					box-shadow: 0px 4px 6px 1px $bsh-2-col;
+					@include ease-in-out($easeInOut-2s, box-shadow);
+					
+
+						&:focus{
+							outline: none;
+						}
+
+						&:hover{
+							box-shadow: 0px 6px 8px 2px $bsh-2-col;
+						}
+				}
+
+				.btn__pink{
+					position: absolute;
+					top: 4px;
+					right: 8px;
+					height: 49px;
+					padding: 0 45px;
+				}
+			}
+	}
+
+
+}
