@@ -197,6 +197,11 @@ button {
   font-weight: 700;
 }
 
+.btn:focus, .btn__pink:focus, .btn__light:focus {
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(224, 122, 180, 0.67);
+          box-shadow: 0px 0px 6px 2px rgba(224, 122, 180, 0.67);
+}
+
 .btn__pink {
   background: #d02184;
   color: #ffffff;
