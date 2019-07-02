@@ -1,0 +1,37 @@
+// тут наша сетка столбцы и т.д
+// по типу бутстрапа)) чуть позже улучшу
+
+.col{
+	display: flex;
+	justify-content: flex-start;
+	box-sizing: inherit;
+	padding: 0 8px;
+
+		&-12{
+			@extend .col;
+			width: 100%;
+		}
+
+		&-10{
+			@extend .col;
+			width: 95%;
+		}
+
+		&-8{
+			@extend .col;
+			width: 60.6666%;
+		}
+
+		&-4{
+			@extend .col;
+			width: 40.2222%;
+		}
+
+		&-3{
+			@extend .col;
+			width: 30.3333%;
+		}
+
+
+
+}

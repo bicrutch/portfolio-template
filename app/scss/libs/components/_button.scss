@@ -30,9 +30,13 @@ button{
 
 		&__light{
 			@extend .btn;
+			padding: 11px 30px;
 			border: 2px solid $g-border-col;
 			background: $btn-trans-col;
 			color: $txt-dg-col;
+				&:focus{
+					border: none;
+				}
 		}
 }
 

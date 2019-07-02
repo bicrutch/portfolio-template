@@ -51,7 +51,7 @@ body {
   margin: 0;
 }
 
-.container__flex-wrap, .container__flex-column {
+.container, .container__flex-wrap, .container__flex-column {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -208,9 +208,14 @@ button {
 }
 
 .btn__light {
+  padding: 11px 30px;
   border: 2px solid #b3b9bb;
   background: transparent;
   color: #9ea4a6;
+}
+
+.btn__light:focus {
+  border: none;
 }
 
 .icons {
@@ -234,4 +239,101 @@ button {
 .icons:focus {
   outline-style: solid;
   outline-width: 2px;
+}
+
+.col, .col-12, .col-10, .col-8, .col-4, .col-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  padding: 0 8px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-10 {
+  width: 95%;
+}
+
+.col-8 {
+  width: 60.6666%;
+}
+
+.col-4 {
+  width: 40.2222%;
+}
+
+.col-3 {
+  width: 30.3333%;
+}
+
+.header {
+  padding: 23px 0 25px 0;
+  z-index: 10;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 6px 1px #e0dfde;
+          box-shadow: 0px 2px 6px 1px #e0dfde;
+}
+
+.header .link {
+  color: #404f54;
+}
+
+.header .nav-panel {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 29px;
+}
+
+.header .nav-panel .list-links {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.header .nav-panel .li-link {
+  margin-right: 11px;
+  margin-left: 11px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header .col-4 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .col-4 .autorisation .log-in {
+  margin-right: 30px;
+}
+
+.header .col-4 .autorisation .sign-up {
+  margin-right: 45px;
+}
+
+.header .col-4 .autorisation .log-in,
+.header .col-4 .autorisation .sign-up {
+  font-size: 14px;
+  text-transform: uppercase;
 }
