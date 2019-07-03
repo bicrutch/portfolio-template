@@ -32,6 +32,11 @@
 			width: 30%;
 		}
 
+		&-2{
+			@extend .col;
+			width: 20%;
+		}
+
 		&-50{
 			@extend .col;
 			width: 50%;
