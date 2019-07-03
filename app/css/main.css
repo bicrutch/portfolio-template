@@ -579,6 +579,10 @@ button {
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   height: 64px;
 }
 
@@ -636,4 +640,97 @@ button {
 .get-start .btn-block {
   margin-top: 40px;
   width: 100%;
+}
+
+.how-it-work {
+  padding: 85px 0 85px 0;
+  background-color: #f4fafa;
+}
+
+.how-it-work__content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-it-work .work {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.how-it-work .work__scheme {
+  margin-top: 60px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.how-it-work .work__box {
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.how-it-work .work__box-header {
+  height: 155px;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.how-it-work .work__box-header:before {
+  content: '';
+  position: absolute;
+  right: 32px;
+  top: 0;
+  width: 65px;
+  height: 100%;
+  border-bottom: 2px solid #d02184;
+}
+
+.how-it-work .work__box-body .headline {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+}
+
+.how-it-work .work__box-body .work__ceo {
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.how-it-work .work__box-icon {
+  max-width: 128px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
 }
