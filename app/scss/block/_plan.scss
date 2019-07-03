@@ -1,0 +1,117 @@
+.tariff-plan{
+	display: flex;
+	width: 100%;
+	padding: 85px 0 85px 0;
+
+	&__content{
+		align-items: center;
+
+		.slogan,
+		.headline{
+			@include lora-bold;
+		}
+
+		.slogan{
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		.headline{
+			margin-top: 18px;
+			font-size: 36px;
+		}
+
+		.subline{
+			margin-top: 36px;
+			font-size: 21px;
+		}
+	}
+
+	.price{
+
+		&__content{
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			margin-top: 65px;
+			width: 100%;
+		}
+		
+		&__card{
+			display: inherit;
+			flex-direction: column;
+			padding: 0;
+			height: auto;
+
+
+			&:hover .price__header{
+				background: $bc-dp;
+				@include ease-in-out($easeInOut-3s, background, color);
+
+				&-name,
+				&-info,
+				&-count{
+					color: $white;
+				}
+			}
+
+			&:hover .price__body{
+				box-shadow: 0px 4px 8px 1px $bsh-col;
+				@include ease-in($easeIn-2s, box-shadow);
+
+				.list__info{
+					text-decoration: underline;
+				}
+			}
+		}
+
+		&__header{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 210px;
+			background: $bc-light-mint;
+
+			&-name{
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 16px;
+			}
+
+			&-info{
+				font-size: 14px;
+			}
+
+			&-count{
+				display: flex;
+				align-items: center;
+				@include lora-bold;
+				margin-top: 22px;
+				font-size: 60px;
+				color: $txt-dp-col;
+
+				.month{
+					@include ptsans-regular;
+					font-size: 18px;
+					margin-left: 16px;
+				}
+			}
+		}
+
+		&__body{
+			display: inline-flex;
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 55px 65px 10px 65px;
+
+			.list__info{
+				font-size: 18px;
+				margin-bottom: 45px;
+			}
+		}
+	}
+
+
+}

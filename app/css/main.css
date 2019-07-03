@@ -258,6 +258,11 @@ button {
 }
 
 .header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding: 23px 0 25px 0;
   z-index: 10;
   position: relative;
@@ -321,6 +326,11 @@ button {
 }
 
 .welcome {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding-top: 60px;
   height: 650px;
   background-image: url("../images/backgrounds/welcome.jpg");
@@ -389,6 +399,11 @@ button {
 }
 
 .features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   background: #ffffff;
   padding: 92px 0 92px;
 }
@@ -438,6 +453,7 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .about__content {
@@ -491,6 +507,11 @@ button {
 }
 
 .get-start {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding: 85px 0 85px 0;
 }
 
@@ -643,6 +664,11 @@ button {
 }
 
 .how-it-work {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding: 85px 0 85px 0;
   background-color: #f4fafa;
 }
@@ -654,15 +680,19 @@ button {
           align-items: center;
 }
 
-.how-it-work .work {
+.how-it-work__content .headline {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 28px;
+}
+
+.how-it-work .work__scheme {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-}
-
-.how-it-work .work__scheme {
   margin-top: 60px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -733,4 +763,177 @@ button {
   width: 100%;
   height: auto;
   display: inline-block;
+}
+
+.tariff-plan {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 85px 0 85px 0;
+}
+
+.tariff-plan__content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tariff-plan__content .slogan,
+.tariff-plan__content .headline {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+.tariff-plan__content .slogan {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.tariff-plan__content .headline {
+  margin-top: 18px;
+  font-size: 36px;
+}
+
+.tariff-plan__content .subline {
+  margin-top: 36px;
+  font-size: 21px;
+}
+
+.tariff-plan .price__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-top: 65px;
+  width: 100%;
+}
+
+.tariff-plan .price__card {
+  display: inherit;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  height: auto;
+}
+
+.tariff-plan .price__card:hover .price__header {
+  background: #d02184;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transition-property: background, color;
+  -o-transition-property: background, color;
+  transition-property: background, color;
+}
+
+.tariff-plan .price__card:hover .price__header-name, .tariff-plan .price__card:hover .price__header-info, .tariff-plan .price__card:hover .price__header-count {
+  color: #ffffff;
+}
+
+.tariff-plan .price__card:hover .price__body {
+  -webkit-box-shadow: 0px 4px 8px 1px #e0dfde;
+          box-shadow: 0px 4px 8px 1px #e0dfde;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  -webkit-transition-property: -webkit-box-shadow;
+  transition-property: -webkit-box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  transition-property: box-shadow, -webkit-box-shadow;
+}
+
+.tariff-plan .price__card:hover .price__body .list__info {
+  text-decoration: underline;
+}
+
+.tariff-plan .price__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 210px;
+  background: #f4fafa;
+}
+
+.tariff-plan .price__header-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.tariff-plan .price__header-info {
+  font-size: 14px;
+}
+
+.tariff-plan .price__header-count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  margin-top: 22px;
+  font-size: 60px;
+  color: #d02184;
+}
+
+.tariff-plan .price__header-count .month {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 16px;
+}
+
+.tariff-plan .price__body {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 55px 65px 10px 65px;
+}
+
+.tariff-plan .price__body .list__info {
+  font-size: 18px;
+  margin-bottom: 45px;
 }
