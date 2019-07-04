@@ -1,0 +1,94 @@
+.client-review{
+	display: flex;
+	width: 100%;
+	padding: 85px 0 85px 0;
+	background: $bc-light-mint;
+
+	&__content{
+		align-items: center;
+
+		.slogan,
+		.headline{
+			@include lora-bold;
+		}
+
+		.slogan{
+			font-size: 12px;
+			text-transform: uppercase;
+		}
+
+		.headline{
+			margin-top: 18px;
+			font-size: 36px;
+		}
+
+		.subline{
+			margin-top: 36px;
+			font-size: 21px;
+		}
+	}
+
+	.review{
+
+		
+		&__block{
+			display: flex;
+		}
+
+		&__box{
+			flex-direction: column;
+			align-items: center;
+			padding: 0;
+			position: relative;
+			z-index: 10;
+
+
+			&:hover{
+				&::before{
+					content: '';
+					position: absolute;
+					top: 46px;
+					width: 303px;
+					height: 208px;
+					display: block;
+					z-index: -1;
+					background: $bc-dark-mint;
+				}
+			}
+
+			&:hover .review__info{
+
+				&-ceo,
+				&-autor{
+					color: $white;
+				}
+			}
+		}
+
+		&__image{
+			display: block;
+			margin-bottom: 17px;
+		}
+
+		&__info{
+			text-align: center;
+			padding: 0 22px 30px 22px;
+			
+			&-ceo{
+				font-size: 16px;
+			}
+
+			&-autor{
+				display: inline-block;
+				font-size: 16px;
+				margin-top: 40px;
+				font-weight: 600;
+				color: $txt-mint-col;
+			}
+		}
+
+	}
+
+
+
+}

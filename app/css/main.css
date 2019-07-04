@@ -937,3 +937,100 @@ button {
   font-size: 18px;
   margin-bottom: 45px;
 }
+
+.client-review {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 85px 0 85px 0;
+  background: #f4fafa;
+}
+
+.client-review__content {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.client-review__content .slogan,
+.client-review__content .headline {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+}
+
+.client-review__content .slogan {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.client-review__content .headline {
+  margin-top: 18px;
+  font-size: 36px;
+}
+
+.client-review__content .subline {
+  margin-top: 36px;
+  font-size: 21px;
+}
+
+.client-review .review__block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.client-review .review__box {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.client-review .review__box:hover::before {
+  content: '';
+  position: absolute;
+  top: 46px;
+  width: 303px;
+  height: 208px;
+  display: block;
+  z-index: -1;
+  background: #1baba1;
+}
+
+.client-review .review__box:hover .review__info-ceo, .client-review .review__box:hover .review__info-autor {
+  color: #ffffff;
+}
+
+.client-review .review__image {
+  display: block;
+  margin-bottom: 17px;
+}
+
+.client-review .review__info {
+  text-align: center;
+  padding: 0 22px 30px 22px;
+}
+
+.client-review .review__info-ceo {
+  font-size: 16px;
+}
+
+.client-review .review__info-autor {
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #1baba1;
+}
