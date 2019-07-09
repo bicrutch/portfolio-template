@@ -64,7 +64,7 @@
 					color: $white;
 				}
 			}
-		}
+		} // -end review__box
 
 		&__image{
 			display: block;
@@ -87,6 +87,25 @@
 				color: $txt-mint-col;
 			}
 		}
+
+		&__footer{
+			margin-top: 100px;
+
+			&-link{
+				text-decoration: none;
+				outline: none;
+
+				.imgimg{
+					max-width: 262px;
+							width: 100%;
+							height: auto;
+					display: inline-block;
+					
+				}
+			}
+		}
+
+
 
 	}
 

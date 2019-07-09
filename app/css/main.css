@@ -633,6 +633,7 @@ button {
 
 .get-start .borderline__bottom {
   position: relative;
+  margin-bottom: 15px;
 }
 
 .get-start .borderline__bottom:before {
@@ -1034,4 +1035,29 @@ button {
   margin-top: 40px;
   font-weight: 600;
   color: #1baba1;
+}
+
+.client-review .review__footer {
+  margin-top: 100px;
+}
+
+.client-review .review__footer-link {
+  text-decoration: none;
+  outline: none;
+}
+
+.client-review .review__footer-link .imgimg {
+  max-width: 262px;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 85px 0 85px 0;
 }
