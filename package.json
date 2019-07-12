@@ -19,5 +19,9 @@
   },
   "author": "ko2doo@github.com",
   "license": "ISC",
-  "repository": "https://github.com/bicrutch/sedona.git"
+  "repository": "https://github.com/bicrutch/sedona.git",
+  "dependencies": {
+    "lodash.mergewith": "^4.6.2",
+    "lodash.template": "^4.5.0"
+  }
 }
